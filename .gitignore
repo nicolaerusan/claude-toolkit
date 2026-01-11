@@ -2,6 +2,7 @@
 .env
 .env.local
 .env.*
+!.env.example
 
 # Config files with secrets
 .claude/commands/fetch-twitter-replies.config.json

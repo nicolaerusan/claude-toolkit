@@ -7,7 +7,7 @@ A collection of [Claude Code](https://docs.anthropic.com/en/docs/claude-code) sk
 | Skill | Description |
 |-------|-------------|
 | [fetch-twitter-replies](skills/fetch-twitter-replies/) | Fetch all replies to a Twitter/X post and export as JSON/CSV |
-| [calendar-reflection](.claude/commands/calendar-reflection.md) | Generate weekly markdown reflections from Google Calendar |
+| [calendar-reflection](skills/calendar-reflection/) | Generate weekly markdown reflections from Google Calendar |
 | [domain-finder](skills/domain-finder/) | Check domain availability via Porkbun API |
 
 ## Quick Start
@@ -49,21 +49,26 @@ The skills are installed as Claude Code slash commands:
 ```
 claude-toolkit/
 ├── .claude/
-│   └── commands/           # Claude Code skill definitions
+│   └── commands/              # Claude Code skill definitions
 │       ├── fetch-twitter-replies.md
 │       ├── calendar-reflection.md
 │       └── calendar-reflection-setup.md
 ├── skills/
 │   ├── fetch-twitter-replies/
 │   │   ├── fetch_twitter_replies.ts
+│   │   ├── .env.example
+│   │   └── README.md
+│   ├── calendar-reflection/
 │   │   └── README.md
 │   └── domain-finder/
 │       ├── check-domain.sh
 │       ├── batch-check.sh
+│       ├── .env.example
 │       └── README.md
+├── .env.example               # Template for all credentials
 ├── .gitignore
 ├── README.md
-└── agents.md               # Guide for AI agents
+└── agents.md                  # Guide for AI agents
 ```
 
 ## Adding New Skills
