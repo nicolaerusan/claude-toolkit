@@ -1,0 +1,31 @@
+# Environment variables (contains secrets)
+.env
+.env.local
+.env.*
+
+# Config files with secrets
+.claude/commands/fetch-twitter-replies.config.json
+.claude/commands/calendar-reflection.config.json
+
+# Generated output files
+twitter_replies_*.json
+twitter_replies_*.csv
+calendar_reflection_*.md
+
+# Node.js
+node_modules/
+package-lock.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Duplicate/temp files
+*.copy.json
+*copy.json
